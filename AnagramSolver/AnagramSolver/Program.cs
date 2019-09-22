@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using AnagramSolver.BusinessLogic;
+using AnagramSolver.BusinessLogic.Repositories;
 using AnagramSolver.Contracts;
 using AnagramSolver.Contracts.Models;
 using AnagramSolver.Contracts.Repositories;
@@ -12,7 +13,7 @@ namespace AnagramSolver.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
@@ -40,10 +41,9 @@ namespace AnagramSolver.ConsoleApp
                 IAnagramValidator anagramValidator = new AnagramValidator(sortedList);
                 List<int> anagramsIndexes = anagramValidator.Validate(intersectedIndexes[0], intersectedIndexes[1]);
 
-
+                IPalindromeRepository palindromeRepository = new PalindromeRepository(options, sortedList);
+                palindromeRepository.WriteEntries(anagramsIndexes);
             }
-
-            Console.ReadKey();
         }
     }
 }

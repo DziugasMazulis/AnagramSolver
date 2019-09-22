@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 
-namespace AnagramSolver.BusinessLogic
+namespace AnagramSolver.BusinessLogic.Repositories
 {
     public class EntryRepository : IEntryRepository
     {
@@ -39,7 +39,7 @@ namespace AnagramSolver.BusinessLogic
 
         private string GetPath()
         {
-            string path = Path.Combine(Environment.CurrentDirectory, _config.FileName);
+            string path = Path.Combine(Environment.CurrentDirectory, _config.InputFileName);
 
             if (!File.Exists(path))
             {
