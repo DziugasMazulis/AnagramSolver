@@ -24,7 +24,7 @@ namespace AnagramSolver.BusinessLogic
 
             if (fromIndex >= _entries.Count || toIndex < 0)
             {
-                return new int[2] { -1, -1 };
+                return null;
             }
 
             return new int[2] { fromIndex, toIndex };

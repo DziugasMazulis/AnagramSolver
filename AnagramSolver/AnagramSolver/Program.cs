@@ -32,7 +32,16 @@ namespace AnagramSolver.ConsoleApp
             DateTime[] dates = consoleUI.Initialize();
 
             IIntersectionFinder intersectionFinder = new IntersectionFinder(sortedList);
+            //returns null if no entries intersect
             int[] intersectedIndexes = intersectionFinder.FindEntries(dates[0], dates[1]);
+
+            if (intersectedIndexes != null)
+            {
+                IAnagramValidator anagramValidator = new AnagramValidator(sortedList);
+                List<int> anagramsIndexes = anagramValidator.Validate(intersectedIndexes[0], intersectedIndexes[1]);
+
+
+            }
 
             Console.ReadKey();
         }
