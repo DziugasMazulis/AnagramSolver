@@ -31,8 +31,8 @@ namespace AnagramSolver.BusinessLogic
                 doc.LoadXml(xml);
             }
 
-            var json = JsonConvert.SerializeXmlNode(doc.DocumentElement, Newtonsoft.Json.Formatting.None, true);
-            var dictionary = JsonConvert.DeserializeObject<DictionaryModel>(json);
+            string json = JsonConvert.SerializeXmlNode(doc.DocumentElement, Newtonsoft.Json.Formatting.None, true);
+            DictionaryModel dictionary = JsonConvert.DeserializeObject<DictionaryModel>(json);
 
             return dictionary.Entry.OrderBy(o => o.Date).ToList();
         }
