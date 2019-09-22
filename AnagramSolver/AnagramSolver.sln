@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramSolver", "AnagramSolver\AnagramSolver.csproj", "{F31EA80B-4F72-41EA-A6CD-C3361516D47F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramSolver.ConsoleApp", "AnagramSolver\AnagramSolver.ConsoleApp.csproj", "{F31EA80B-4F72-41EA-A6CD-C3361516D47F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramSolver.Contracts", "AnagramSolver.Contracts\AnagramSolver.Contracts.csproj", "{F1681240-7EFE-409B-B416-09DA48F738D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramSolver.BusinessLogic", "AnagramSolver.BusinessLogic\AnagramSolver.BusinessLogic.csproj", "{489197F3-A448-459E-9B90-A8A2104D5316}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F31EA80B-4F72-41EA-A6CD-C3361516D47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F31EA80B-4F72-41EA-A6CD-C3361516D47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F31EA80B-4F72-41EA-A6CD-C3361516D47F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1681240-7EFE-409B-B416-09DA48F738D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1681240-7EFE-409B-B416-09DA48F738D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1681240-7EFE-409B-B416-09DA48F738D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1681240-7EFE-409B-B416-09DA48F738D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489197F3-A448-459E-9B90-A8A2104D5316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489197F3-A448-459E-9B90-A8A2104D5316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489197F3-A448-459E-9B90-A8A2104D5316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489197F3-A448-459E-9B90-A8A2104D5316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
