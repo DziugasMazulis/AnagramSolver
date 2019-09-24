@@ -1,8 +1,6 @@
 ﻿using AnagramSolver.Contracts;
 using AnagramSolver.Contracts.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AnagramSolver.BusinessLogic
 {

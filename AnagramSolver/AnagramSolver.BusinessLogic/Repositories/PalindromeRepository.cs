@@ -28,16 +28,14 @@ namespace AnagramSolver.BusinessLogic.Repositories
             {
                 foreach (int index in anagramsIndexes)
                 {
-                    file.WriteLine($"Date: {_entries[index].Date.Date.ToString("d")}, Word:{_entries[index].Word}");
+                    file.WriteLine($"Date: {_entries[index].Date.Date.ToString("d")}, Word: {_entries[index].Word}");
                 }
             }
         }
 
         private string GetPath()
         {
-            string path = Path.Combine(Environment.CurrentDirectory, _config.OutputFileName);
-
-            return path;
+            return Path.Combine(Environment.CurrentDirectory, _config.OutputFileName);
         }
     }
 }

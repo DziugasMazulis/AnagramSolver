@@ -8,15 +8,13 @@ namespace AnagramSolver.ConsoleApp
         {
             Console.WriteLine("Enter the date to search from:");
             string input = Console.ReadLine();
-            DateTime fromDate;
-            DateTime.TryParse(input, out fromDate);
+            DateTime.TryParse(input, out DateTime fromDate);
 
             Console.WriteLine("Enter date to search to:");
             input = Console.ReadLine();
-            DateTime toDate;
-            DateTime.TryParse(input, out toDate);
+            DateTime.TryParse(input, out DateTime toDate);
 
-            if(fromDate > toDate)
+            if (fromDate > toDate)
             {
                 throw new ArgumentException("Date to search from has to be equal or greater than date to searh to");
             }

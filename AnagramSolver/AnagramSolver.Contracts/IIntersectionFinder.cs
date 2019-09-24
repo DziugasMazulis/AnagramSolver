@@ -1,6 +1,4 @@
-﻿using AnagramSolver.Contracts.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace AnagramSolver.Contracts
 {
